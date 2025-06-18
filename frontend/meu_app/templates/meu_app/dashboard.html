@@ -1,0 +1,23 @@
+{% extends "meu_app/base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <style>
+        .message-success {
+            padding:10px;
+            margin-bottom:10px;
+            color: green;
+            border:1px solid #ccc;
+        }
+        .message-error {
+            padding:10px;
+            margin-bottom:10px;
+            color: red;
+            border:1px solid #ccc;
+        }
+    </style>
+  
+    <h2>Bem-vindo ao Dashboard!</h2>
+    <p>Você fez login com sucesso.</p>
+{% endblock %}

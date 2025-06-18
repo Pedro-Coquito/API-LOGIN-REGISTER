@@ -1,0 +1,50 @@
+{% extends "meu_app/base.html" %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+<style>
+    .home-container {
+        text-align: center;
+        margin-top: 100px;
+        font-family: Arial, sans-serif;
+    }
+
+    .home-container h2 {
+        font-size: 36px;
+        color: #333;
+    }
+
+    .button-container {
+        margin-top: 40px;
+    }
+
+    .home-button {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 24px;
+        margin: 10px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .home-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="home-container">
+    <h2>Bem-vindo ao Sistema de Cadastro</h2>
+    <p>Escolha uma opção abaixo para continuar:</p>
+
+    <div class="button-container">
+        <a href="{% url 'meu_app:login' %}" class="home-button">🔐 Login</a>
+        <a href="{% url 'meu_app:cadastro' %}" class="home-button">📝 Cadastro</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Meu Sistema{% endblock %}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: #495057;
+        }
+
+        main {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    {% if not hide_header %}
+    <header>
+        <h1>💻 Meu Sistema Web</h1>
+        <nav>
+            <a href="{% url 'meu_app:home' %}">🏠 Início</a>
+            <a href="{% url 'meu_app:cadastro' %}">📝 Cadastro</a>
+            <a href="{% url 'meu_app:login' %}">🔐 Login</a>
+        </nav>
+    </header>
+    {% endif %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
+
