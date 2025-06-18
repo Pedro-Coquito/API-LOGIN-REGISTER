@@ -1,7 +1,7 @@
 from sqlmodel import SQLModel, create_engine, Field, Session, select
 
 
-DATABASE_URL = "postgresql://postgres:Fredyy123!@localhost:5432/db_projetoHugo"
+DATABASE_URL = "Adicione sua DB aqui"
 engine = create_engine(DATABASE_URL, echo=True)
 
 
