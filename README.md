@@ -1,5 +1,5 @@
 ## 🚀 API de Autenticação (Login & Register)
-Este projeto é uma API RESTful de autenticação desenvolvida para gerenciar o registro e login de usuários de forma segura, utilizando as tecnologias mais modernas do ecossistema Java.
+Este projeto é uma API RESTful de autenticação desenvolvida para gerenciar o registro e login de usuários de forma segura, utilizando as tecnologias mais modernas do ecossistema Python.
 
 ## 🛠️ Tecnologias Utilizadas
 Python 3.12.1
