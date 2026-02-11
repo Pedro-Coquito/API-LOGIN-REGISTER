@@ -1,12 +1,3 @@
-# API-LOGIN-REGISTER
-Esta é uma aplicação basica integrando Backend com Frontend, criando um Dashbord com login, e cadastro com todos os dados sendo indexados a um banco de dados no PostGress
-
-Para ultilizar é necessario ter instalado em sua maquina ou ambiente virtual o SqlModel, django, python, FastAPI e Uvicorn para fazer o acesso localmente
-Em Backend/Config.py é necessario adicionar a URL da sua db
-
-Para rodar a aplicação ultilize o comando:'uvicorn: app:FastAPI -- reload' e em outro prompt dentro da pasta "Frontend" ultilize o comando py manage.py runserver 8001"
-
-O Uvicorn rodará a parte do backend na porta 8000 e o Frontend rodará na porta 8001
-
-Este projeto conta com um artigo descrevendo cada principal função e suas ultilzações e a #complexidade de cada uma.
-Projeto desenvolvido por: Pedro Cavalcanti Coquito e Matheus Soares Simão
+🚀 API de Autenticação (Login & Register)Este projeto é uma API RESTful de autenticação desenvolvida para gerenciar o registro e login de usuários de forma segura, utilizando as tecnologias mais modernas do ecossistema Java.🛠️ Tecnologias UtilizadasJava 21 (LTS)Spring Boot 3.xSpring Security (Autenticação e Autorização)JSON Web Token (JWT) (Para tokens de acesso seguros)Spring Data JPA (Persistência de dados)PostgreSQL/MySQL/H2 (Especifique qual você usou)Lombok (Produtividade no código)Maven (Gerenciador de dependências)📌 Funcionalidades[x] Registro de Usuários: Criação de novos usuários com senha criptografada (BCrypt).[x] Login: Autenticação de credenciais e geração de Token JWT.[x] Proteção de Rotas: Apenas usuários autenticados podem acessar endpoints específicos.[x] Validação de Dados: Uso de @Valid para garantir a integridade das requisições.⚙️ Como Executar o ProjetoClone o repositório:Bashgit clone https://github.com/Pedro-Coquito/API-LOGIN-REGISTER.git
+Configure o banco de dados:Altere as credenciais no arquivo src/main/resources/application.properties.Execute a aplicação:Bashmvn spring-boot:run
+🛣️ Endpoints PrincipaisMétodoEndpointDescriçãoAcessoPOST/auth/registerCria uma nova contaPúblicoPOST/auth/loginRealiza login e retorna o TokenPúblicoGET/user/meRetorna dados do usuário logadoPrivado (Token)👨‍💻 AutorPedro CoquitoLinkedIn: [Seu Link Aqui]Email: [Seu Email Aqui]
