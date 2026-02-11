@@ -51,13 +51,16 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 
 ```
-
+Método,Endpoint,Descrição,Proteção
+POST,/register,Cria um novo usuário,Pública
+POST,/login,Gera o token JWT,Pública
+GET,/profile,Retorna dados do perfil,Privada (JWT)
 
 ## 🛣️ Endpoints da API
 
 | Método | Endpoint | Descrição | Autenticação |
 | :--- | :--- | :--- | :--- |
-| `POST` | `/auth/login` | Autentica usuário e gera token JWT | Nenhuma |
-| `POST` | `/auth/register` | Cria um novo usuário no sistema | Nenhuma |
-| `GET` | `/api/v1/resource` | Exemplo de rota protegida | JWT Token |
+| `POST` | `/login` | Autentica usuário e gera token JWT | Publica |
+| `POST` | `/register` | Cria um novo usuário no sistema | Publica |
+| `GET` | `/profile` | Retorna dados do perfil | Privada JWT |
 
